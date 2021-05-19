@@ -1,0 +1,3 @@
+dinamarca
+brasil
+estados unidos
