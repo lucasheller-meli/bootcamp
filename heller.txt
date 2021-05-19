@@ -3,3 +3,6 @@ Livre
 Brasil
 Argentina
 Colombia
+
+México
+Chile
