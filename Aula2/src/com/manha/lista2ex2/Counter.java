@@ -1,3 +1,5 @@
+package com.manha.lista2ex2;
+
 public class Counter {
     private int num;
 

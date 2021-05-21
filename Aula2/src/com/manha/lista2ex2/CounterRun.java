@@ -1,3 +1,7 @@
+package com.manha.lista2ex2;
+
+import com.manha.lista2ex2.Counter;
+
 public class CounterRun {
 
     public static void main(String[] args){
