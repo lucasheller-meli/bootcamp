@@ -1,4 +1,4 @@
-package com.geometry;
+package com.tarde.lista1ex2;
 
 public abstract class GeometricFigure {
     public abstract double area();

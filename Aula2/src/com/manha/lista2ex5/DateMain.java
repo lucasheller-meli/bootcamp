@@ -1,4 +1,4 @@
-package com.manha.date;
+package com.manha.lista2ex5;
 
 public class DateMain {
     public static void main(String[] args) {

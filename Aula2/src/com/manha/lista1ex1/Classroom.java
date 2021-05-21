@@ -1,4 +1,4 @@
-package com.entities;
+package com.manha.lista1ex1;
 
 import java.util.List;
 

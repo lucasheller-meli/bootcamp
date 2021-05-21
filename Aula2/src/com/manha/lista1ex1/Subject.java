@@ -1,4 +1,4 @@
-package com.manha.school;
+package com.manha.lista1ex1;
 
 public class Subject {
     private String name;

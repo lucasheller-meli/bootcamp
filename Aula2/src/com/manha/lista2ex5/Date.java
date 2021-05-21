@@ -1,4 +1,4 @@
-package com;
+package com.manha.lista2ex5;
 
 // Crie uma classe Data.
 // A classe conterá, além dos construtores que você considera apropriados,
