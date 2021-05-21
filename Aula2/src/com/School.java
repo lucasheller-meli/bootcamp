@@ -6,7 +6,7 @@ import com.entities.Subject;
 
 import java.util.List;
 
-public class Ex1 {
+public class School {
     public static void main(String[] args) {
         Subject subject1 = new Subject("Matemática Básica", 80);
         Subject subject2 = new Subject("Java", 160);
