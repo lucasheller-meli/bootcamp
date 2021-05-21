@@ -1,4 +1,7 @@
 package com.tarde.lista2ex1;
 
-public class CLTEmployee {
+public abstract class CLTEmployee implements Employee {
+
+    protected double baseSalary;
+
 }
