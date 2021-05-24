@@ -1,4 +1,4 @@
-package src.com.manha.lista1ex1;
+package com.manha.lista1ex1;
 
 public class Celular implements Precedente<Celular>{
     private double number;

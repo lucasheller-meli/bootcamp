@@ -1,4 +1,4 @@
-package src.com.manha.lista1ex1;
+package com.manha.lista1ex1;
 
 public class SortUtil {
     public static <T> Precedente <T> [] sort (Precedente <T> arr[]){
