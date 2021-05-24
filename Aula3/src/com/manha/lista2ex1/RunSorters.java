@@ -18,7 +18,6 @@ public class RunSorters {
         System.out.println(Arrays.toString(strings));
 
         // benchmark
-
         BubbleSorter<Integer> bubbleSorter = new BubbleSorter<>();
         benchMark(bubbleSorter);
 
@@ -31,7 +30,7 @@ public class RunSorters {
 
     private static void benchMark(Sorter<Integer> sorter) {
         Random random = new Random();
-        Integer[] benchMarkNumbers = random.ints(10000, 0, 5000).boxed().toArray(Integer[]::new);
+        Integer[] benchMarkNumbers = random.ints(30000, 0, 30000).boxed().toArray(Integer[]::new);
 
         Time time = new Time();
         time.start();
