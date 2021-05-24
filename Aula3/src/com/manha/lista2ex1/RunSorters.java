@@ -1,4 +1,4 @@
-package com.manha.lista1ex2;
+package com.manha.lista2ex1;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
