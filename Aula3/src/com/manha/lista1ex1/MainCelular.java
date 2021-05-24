@@ -3,16 +3,16 @@ package src.com.manha.lista1ex1;
 public class MainCelular {
 
     public static void main(String[] args) {
-        Precedente<Celular>[] listacelular = new Precedente[2];
+        Precedente<Celular>[] listaCelular = new Precedente[2];
 
         Celular celular = new Celular(123456, "Dani");
         Celular celular1 = new Celular(123456, "Bia");
 
-        listacelular[0] = celular;
-        listacelular[1] = celular1;
-        SortUtil.sort(listacelular);
+        listaCelular[0] = celular;
+        listaCelular[1] = celular1;
+        SortUtil.sort(listaCelular);
 
-        for (Precedente<Celular> celulares : listacelular) {
+        for (Precedente<Celular> celulares : listaCelular) {
             System.out.println(celulares.imprimeAtributo());
         }
 

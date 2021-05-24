@@ -8,16 +8,16 @@ public class MainPessoa {
         Pessoa pessoa2 = new Pessoa("Daniela", "45678");
         Pessoa pessoa3 = new Pessoa("Beatriz", "45678");
 
-        Precedente<Pessoa>[] listapessoa = new Precedente[4];
-        listapessoa[0] = pessoa;
-        listapessoa[1] = pessoa1;
-        listapessoa[2] = pessoa2;
-        listapessoa[3] = pessoa3;
+        Precedente<Pessoa>[] listaPessoa = new Precedente[4];
+        listaPessoa[0] = pessoa;
+        listaPessoa[1] = pessoa1;
+        listaPessoa[2] = pessoa2;
+        listaPessoa[3] = pessoa3;
 
-        SortUtil.sort(listapessoa);
+        SortUtil.sort(listaPessoa);
 
-        for (Precedente<Pessoa> pessoal : listapessoa) {
-            System.out.println(pessoal.imprimeAtributo());
+        for (Precedente<Pessoa> p : listaPessoa) {
+            System.out.println(p.imprimeAtributo());
         }
         //System.out.println(pessoa.precedeA(pessoa1));
     }
