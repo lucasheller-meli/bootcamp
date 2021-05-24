@@ -1,4 +1,4 @@
-package com.manha.lista1ex2;
+package com.manha.lista2ex1;
 
 public class Time {
     private long start;
