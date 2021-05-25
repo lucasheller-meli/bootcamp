@@ -15,5 +15,8 @@ public class RodarVeiculos {
         corrida.registrarMoto(100.0, 100.0, 100.0, "ABC-223");
         corrida.verificarVencedor();
 
+
+        corrida.socorrer("ABC-123");
+        corrida.socorrer("ABC-223");
     }
 }
