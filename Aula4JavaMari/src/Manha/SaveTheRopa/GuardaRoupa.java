@@ -37,7 +37,7 @@ public class GuardaRoupa {
 
     public void listarVestuario(){
         //lista todas as roupas que estao armazenada e onde estao
-        this.vestuario.forEach((key, value) -> System.out.println("Chave ->" + key + "" + value + "\n"));
+        this.vestuario.forEach((key, value) -> System.out.println("Chave -> " + key + " " + value + "\n"));
     }
 
     public void listarumVestuario(Integer key){
@@ -45,7 +45,7 @@ public class GuardaRoupa {
     }
 
     public void removerVestuario(Integer key){
-        System.out.println("Removendo o vestuario ->" + this.vestuario.remove(key));
+        System.out.println("Removendo o vestuario -> " + this.vestuario.remove(key));
     }
 
 

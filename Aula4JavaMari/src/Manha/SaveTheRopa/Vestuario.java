@@ -1,9 +1,14 @@
 package Manha.SaveTheRopa;
 
 public class Vestuario {
-
+    //Cria a classe com os metodos padroes
     private String marca;
     private String modelo;
+
+    public Vestuario(String marca, String modelo){
+        this.marca = marca;
+        this.modelo = modelo;
+    }
 
     public String getMarca() {
         return marca;
