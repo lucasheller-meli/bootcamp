@@ -2,6 +2,7 @@ package com.dakar;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class Corrida {
@@ -11,6 +12,8 @@ public class Corrida {
     private String nome;
     private Integer qtdVeiculosPermitidos;
     private List<Veiculo> veiculos = new ArrayList<>();
+    private Socorrista<Carro> socorristaCarro = new SocorristaCarro();
+    private Socorrista<Moto> socorristaMoto = new SocorristaMoto();
 
     public Corrida(Double distancia, Double premioEmReais, String nome, Integer qtdVeiculosPermitidos, List<Veiculo> veiculos) {
         this.distancia = distancia;
@@ -104,9 +107,37 @@ public class Corrida {
             }
         });
 
-        System.out.println("O vencedor é o veiculo "+veiculo);
+        System.out.println("O vencedor é o "+veiculo);
     }
 
+    public Optional<Veiculo> pegarVeiculoPorPlaca(String placa){
+       return this.veiculos.stream()
+                .filter(v -> placa.equalsIgnoreCase(v.getPlaca()))
+                .findFirst();
+    }
+
+    public void socorrer(String placa){
+        Optional<Veiculo> veiculo = pegarVeiculoPorPlaca(placa);
+        if(veiculo.isEmpty()){
+            System.out.println("Veiculo não encontrado");
+            return;
+        }
+        Veiculo v = veiculo.get();
+        if(v instanceof Carro){
+            socorrerCarro((Carro) v);
+        }
+        if( v instanceof Moto){
+            socorrerMoto((Moto) v);
+        }
+    }
+
+    private void socorrerCarro(Carro carro){
+        socorristaCarro.socorrer(carro);
+    }
+
+    private void socorrerMoto(Moto moto){
+        socorristaMoto.socorrer(moto);
+    }
 
 
 }
