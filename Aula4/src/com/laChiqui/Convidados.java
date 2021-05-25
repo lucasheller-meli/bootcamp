@@ -1,8 +1,13 @@
 package com.laChiqui;
 
-public class Convidados {
-    private String meli;
-    private String standard;
+public abstract class Convidados {
 
+    protected String nome;
+
+    public Convidados(String nome) {
+        this.nome = nome;
+    }
+
+    public abstract void comerBolo();
 
 }
